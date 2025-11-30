@@ -1,4 +1,5 @@
 import Layout from "@/components/layout";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
@@ -68,31 +69,35 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                <div className="bg-blue-50 p-8 flex justify-center items-center relative overflow-hidden h-80">
-                  <div className="absolute inset-0 bg-blue-500/5 group-hover:bg-blue-500/10 transition-colors" />
-                  <div className="absolute -right-20 -top-20 w-64 h-64 bg-blue-200/30 rounded-full blur-3xl" />
-                  <img 
-                    src={octoImage} 
-                    alt="Octo Wash Detergent" 
-                    className="w-64 h-64 object-contain relative z-10 drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <CardContent className="p-8 bg-white">
-                  <div className="flex items-center justify-between mb-4">
-                    <h4 className="text-3xl font-heading font-bold text-blue-600">OCTO WASH</h4>
-                    <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">Premium Detergent</span>
+              <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer">
+                <Link href="/brand/octo-wash">
+                  <div>
+                    <div className="bg-blue-50 p-8 flex justify-center items-center relative overflow-hidden h-80">
+                      <div className="absolute inset-0 bg-blue-500/5 group-hover:bg-blue-500/10 transition-colors" />
+                      <div className="absolute -right-20 -top-20 w-64 h-64 bg-blue-200/30 rounded-full blur-3xl" />
+                      <img 
+                        src={octoImage} 
+                        alt="Octo Wash Detergent" 
+                        className="w-64 h-64 object-contain relative z-10 drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <CardContent className="p-8 bg-white">
+                      <div className="flex items-center justify-between mb-4">
+                        <h4 className="text-3xl font-heading font-bold text-blue-600">OCTO WASH</h4>
+                        <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">Premium Detergent</span>
+                      </div>
+                      <p className="text-slate-600 mb-6">
+                        Advanced fabric care technology that removes tough stains while keeping clothes soft and vibrant. Experience the power of deep cleaning.
+                      </p>
+                      <ul className="space-y-2 mb-6">
+                        <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-blue-500 w-4 h-4" /> Tough on stains, gentle on fabric</li>
+                        <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-blue-500 w-4 h-4" /> Long-lasting fresh fragrance</li>
+                        <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-blue-500 w-4 h-4" /> Color-protection formula</li>
+                      </ul>
+                      <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white pointer-events-none">View Products</Button>
+                    </CardContent>
                   </div>
-                  <p className="text-slate-600 mb-6">
-                    Advanced fabric care technology that removes tough stains while keeping clothes soft and vibrant. Experience the power of deep cleaning.
-                  </p>
-                  <ul className="space-y-2 mb-6">
-                    <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-blue-500 w-4 h-4" /> Tough on stains, gentle on fabric</li>
-                    <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-blue-500 w-4 h-4" /> Long-lasting fresh fragrance</li>
-                    <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-blue-500 w-4 h-4" /> Color-protection formula</li>
-                  </ul>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Learn More</Button>
-                </CardContent>
+                </Link>
               </Card>
             </motion.div>
 
@@ -103,31 +108,35 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group">
-                <div className="bg-yellow-50 p-8 flex justify-center items-center relative overflow-hidden h-80">
-                  <div className="absolute inset-0 bg-yellow-500/5 group-hover:bg-yellow-500/10 transition-colors" />
-                  <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-yellow-200/30 rounded-full blur-3xl" />
-                  <img 
-                    src={dextaImage} 
-                    alt="Dexta Cleaner" 
-                    className="w-64 h-64 object-contain relative z-10 drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <CardContent className="p-8 bg-white">
-                  <div className="flex items-center justify-between mb-4">
-                    <h4 className="text-3xl font-heading font-bold text-yellow-600">DEXTA</h4>
-                    <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold">Home Cleaning</span>
+              <Card className="overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group cursor-pointer">
+                <Link href="/brand/dexta">
+                  <div>
+                    <div className="bg-yellow-50 p-8 flex justify-center items-center relative overflow-hidden h-80">
+                      <div className="absolute inset-0 bg-yellow-500/5 group-hover:bg-yellow-500/10 transition-colors" />
+                      <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-yellow-200/30 rounded-full blur-3xl" />
+                      <img 
+                        src={dextaImage} 
+                        alt="Dexta Cleaner" 
+                        className="w-64 h-64 object-contain relative z-10 drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <CardContent className="p-8 bg-white">
+                      <div className="flex items-center justify-between mb-4">
+                        <h4 className="text-3xl font-heading font-bold text-yellow-600">DEXTA</h4>
+                        <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold">Home Cleaning</span>
+                      </div>
+                      <p className="text-slate-600 mb-6">
+                        Versatile cleaning solutions for every corner of your home. From floors to glass, Dexta ensures a sparkling clean finish every time.
+                      </p>
+                      <ul className="space-y-2 mb-6">
+                        <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-yellow-500 w-4 h-4" /> Multi-surface cleaning power</li>
+                        <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-yellow-500 w-4 h-4" /> Antibacterial protection</li>
+                        <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-yellow-500 w-4 h-4" /> Streak-free shine</li>
+                      </ul>
+                      <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-white pointer-events-none">View Products</Button>
+                    </CardContent>
                   </div>
-                  <p className="text-slate-600 mb-6">
-                    Versatile cleaning solutions for every corner of your home. From floors to glass, Dexta ensures a sparkling clean finish every time.
-                  </p>
-                  <ul className="space-y-2 mb-6">
-                    <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-yellow-500 w-4 h-4" /> Multi-surface cleaning power</li>
-                    <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-yellow-500 w-4 h-4" /> Antibacterial protection</li>
-                    <li className="flex items-center gap-2 text-sm text-slate-700"><Check className="text-yellow-500 w-4 h-4" /> Streak-free shine</li>
-                  </ul>
-                  <Button className="w-full bg-yellow-500 hover:bg-yellow-600 text-white">Learn More</Button>
-                </CardContent>
+                </Link>
               </Card>
             </motion.div>
           </div>
