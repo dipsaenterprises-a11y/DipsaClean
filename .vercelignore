@@ -1,0 +1,12 @@
+.git
+.gitignore
+.local
+.cache
+README.md
+*.md
+node_modules
+.env.local
+.env.*.local
+.replit
+.DS_Store
+/attached_assets
