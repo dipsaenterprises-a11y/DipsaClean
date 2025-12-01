@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Menu, X, Phone, MapPin, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Menu, X, Phone, MapPin, Mail, Facebook, Instagram, Twitter } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -29,9 +29,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <a href="#brands" className="text-sm font-medium hover:text-primary transition-colors">Our Brands</a>
             <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">About Us</a>
             <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">Contact</a>
-            <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">
-              Get Quote
-            </Button>
+            <a href="https://wa.me/8259076839" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">
+                Get Quote
+              </Button>
+            </a>
           </nav>
 
           {/* Mobile Menu Toggle */}
@@ -50,7 +52,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <a href="#brands" className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Our Brands</a>
             <a href="#about" className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>About Us</a>
             <a href="#contact" className="text-lg font-medium" onClick={() => setIsMenuOpen(false)}>Contact</a>
-            <Button className="w-full bg-primary text-white">Get Quote</Button>
+            <a href="https://wa.me/8259076839" target="_blank" rel="noopener noreferrer" className="w-full">
+              <Button className="w-full bg-primary text-white">Get Quote</Button>
+            </a>
           </div>
         )}
       </header>
@@ -74,9 +78,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               Premium cleaning solutions for homes and industries. Manufacturing excellence since establishment.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="bg-slate-800 p-2 rounded-full hover:bg-primary hover:text-white transition-colors"><Facebook size={18} /></a>
-              <a href="#" className="bg-slate-800 p-2 rounded-full hover:bg-primary hover:text-white transition-colors"><Instagram size={18} /></a>
-              <a href="#" className="bg-slate-800 p-2 rounded-full hover:bg-primary hover:text-white transition-colors"><Linkedin size={18} /></a>
+              <a href="https://www.facebook.com/profile.php?id=61575655732921" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-primary hover:text-white transition-colors"><Facebook size={18} /></a>
+              <a href="https://www.instagram.com/dipsaenterprises" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-primary hover:text-white transition-colors"><Instagram size={18} /></a>
+              <a href="https://x.com/Octo_wash" target="_blank" rel="noopener noreferrer" className="bg-slate-800 p-2 rounded-full hover:bg-primary hover:text-white transition-colors"><Twitter size={18} /></a>
             </div>
           </div>
 

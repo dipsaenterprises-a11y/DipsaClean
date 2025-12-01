@@ -42,12 +42,16 @@ export default function Home() {
               From fabric care to surface disinfection, we engineer cleanliness.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 h-14 text-lg">
-                Explore Products
-              </Button>
-              <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 rounded-full px-8 h-14 text-lg">
-                Contact Us
-              </Button>
+              <a href="#brands">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 h-14 text-lg">
+                  Explore Products
+                </Button>
+              </a>
+              <a href="https://wa.me/8259076839" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 rounded-full px-8 h-14 text-lg">
+                  Contact Us
+                </Button>
+              </a>
             </div>
           </motion.div>
         </div>

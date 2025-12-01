@@ -127,9 +127,11 @@ export default function BrandPage() {
                           </Badge>
                         ))}
                       </div>
-                      <Button className={`w-full ${themeButton} text-white`}>
-                        Inquire Now
-                      </Button>
+                      <a href="https://wa.me/8259076839" target="_blank" rel="noopener noreferrer" className="w-full">
+                        <Button className={`w-full ${themeButton} text-white`}>
+                          Inquire Now
+                        </Button>
+                      </a>
                     </div>
                   </CardContent>
                 </Card>
@@ -147,9 +149,11 @@ export default function BrandPage() {
           <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
             We offer competitive rates for bulk orders and distributors. Contact us today to discuss your requirements.
           </p>
-          <Button size="lg" className={`rounded-full px-8 h-14 text-lg font-bold ${themeButton}`}>
-            Contact Sales Team
-          </Button>
+          <a href="https://wa.me/8259076839" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className={`rounded-full px-8 h-14 text-lg font-bold ${themeButton}`}>
+              Contact Sales Team
+            </Button>
+          </a>
         </div>
       </section>
     </Layout>
