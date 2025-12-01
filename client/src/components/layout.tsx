@@ -12,10 +12,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <Link href="/">
-            <a className="flex items-center gap-2">
-              <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                D
-              </div>
+            <a className="flex items-center gap-3">
+              <img src="/logo.png" alt="Dipsa Enterprises" className="h-12 w-12 object-contain" />
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-xl leading-none text-primary">Dipsa</span>
                 <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase">Enterprises</span>
@@ -69,9 +67,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="h-8 w-8 bg-primary rounded flex items-center justify-center text-white font-bold">
-                D
-              </div>
+              <img src="/logo.png" alt="Dipsa Enterprises" className="h-10 w-10 object-contain" />
               <span className="font-heading font-bold text-xl text-white">Dipsa Enterprises</span>
             </div>
             <p className="text-slate-400 mb-6 max-w-xs">
