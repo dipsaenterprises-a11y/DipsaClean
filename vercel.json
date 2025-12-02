@@ -28,7 +28,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.cjs"
+      "destination": "/index.html"
     }
   ]
 }
